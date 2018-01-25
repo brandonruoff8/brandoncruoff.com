@@ -1,17 +1,23 @@
 body {
     background-color: lightgray;
 }
-h2 {
-    background-color:red;
+h1 {
+    text-align:center;
 }
-p {
-    background-color:black;
+h2.white-text {
+	text-align:center;
 	color:white;
+}
+.black-box {
+    background-color:black;
 	border:5px solid blue;
 	padding:20px;
 } 
 .center-whole {
 	text-align:center;
+}
+.right-side {
+	text-align:right;
 }
 .blue-bg {
 	background-color:blue;
@@ -22,4 +28,50 @@ p {
 }
 .red-bg {
 	background-color:red;
+}
+.pokemon {
+	text-align:center;
+}
+img.overwatch-dps {
+	width:100px;
+	height:100px;
+	background-color:light-gray;
+	border:5px solid red;
+	padding:20px;
+	float:right;
+}
+img.overwatch-tank {
+	width:100px;
+	height:100px;
+	background-color:light-gray;
+	border:5px solid turquoise;
+	padding:20px;
+	float:right;
+}
+img.overwatch-healer {
+	width:100px;
+	height:100px;
+	background-color:light-gray;
+	border:5px solid yellow;
+	padding:20px;
+	float:right;
+}
+
+.yellow-text {
+	color:yellow;
+}
+.purple-text {
+	color:purple;
+}
+.red-text {
+	color:red;
+}
+.turquoise-text {
+	color:turquoise;
+}
+.pink-text {
+	color:#F660AB;
+}
+.white-text {
+	color:white;
 }
