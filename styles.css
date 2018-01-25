@@ -1,4 +1,5 @@
 body {
+	font-family:sans-serif;
     background-color: gray;
 	margin:0px;
 	border: 5px solid blue;
@@ -40,6 +41,9 @@ h2.white-text {
 }
 .red-bg {
 	background-color:red;
+}
+.extra-box-padding {
+	padding:5px;
 }
 .pokemon {
 	text-align:center;
