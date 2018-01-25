@@ -37,7 +37,7 @@ img.overwatch-dps {
 	height:100px;
 	background-color:light-gray;
 	border:5px solid red;
-	padding:20px;
+	padding:0px;
 	float:right;
 }
 img.overwatch-tank {
@@ -45,7 +45,7 @@ img.overwatch-tank {
 	height:100px;
 	background-color:light-gray;
 	border:5px solid turquoise;
-	padding:20px;
+	padding:0px;
 	float:right;
 }
 img.overwatch-healer {
@@ -53,7 +53,7 @@ img.overwatch-healer {
 	height:100px;
 	background-color:light-gray;
 	border:5px solid yellow;
-	padding:20px;
+	padding:0px;
 	float:right;
 }
 
