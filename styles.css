@@ -48,6 +48,14 @@ img.overwatch-tank {
 	padding:0px;
 	float:right;
 }
+img.overwatch-defense {
+	width:100px;
+	height:100px;
+	background-color:light-gray;
+	border:5px solid orange;
+	padding:0px;
+	float:right;
+}
 img.overwatch-healer {
 	width:100px;
 	height:100px;
