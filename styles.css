@@ -1,8 +1,9 @@
 body {
 	font-family:sans-serif;
-    background-color: gray;
+    background-color: #3B4E7F;
 	margin:0px;
-	border: 5px solid blue;
+	border: 5px solid black;
+	off-set:black;
 	padding: 10px;
 }
 h1 {
@@ -33,7 +34,7 @@ h2.white-text {
 	float:left;
 }
 .blue-bg {
-	background-color:blue;
+	background-color:blue;	
 }
 .black-bg {
 	background-color:black;
