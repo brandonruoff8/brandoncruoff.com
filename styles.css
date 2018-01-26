@@ -2,11 +2,12 @@ body {
 	font-family:sans-serif;
     background-color: #3B4E7F;
 	margin:0px;
-	border: 5px solid black;
+	border:0px;
 	off-set:black;
 	padding: 10px;
 }
 h1 {
+	color:white;
     text-align:center;
 }
 h2.white-text {
@@ -18,8 +19,19 @@ h2.white-text {
 	border:5px solid blue;
 	padding:20px;
 } 
+.name-button {
+    background-color: sky-blue;
+    border: none;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 5px;
+    font-size: 20px;
+} 
 .gray-button {
-    background-color: gray; /* Green */
+    background-color: gray;
     border: none;
     color: white;
     padding:10px;
