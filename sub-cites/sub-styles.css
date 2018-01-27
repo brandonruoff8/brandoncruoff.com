@@ -12,6 +12,9 @@ h2.white-text {
 	text-align:center;
 	color:white;
 }
+.button {
+	
+}
 a:link {
 	color:white;
 	text-decoration:none;
@@ -20,6 +23,18 @@ a:visited {
 	color:white;
 	text-decoration:none;
 }
+.gray-button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 5px;
+    font-size: 16px;
+	cursor: pointer;
+} 
 .black-box {
     background-color:black;
 	border:5px solid blue;
