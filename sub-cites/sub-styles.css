@@ -8,9 +8,13 @@ body {
 h1 {
     text-align:center;
 }
-h2.white-text {
+h2 {
 	text-align:center;
 	color:white;
+}
+h3 {
+	text-align:center;
+	color:red;
 }
 .button {
 	
