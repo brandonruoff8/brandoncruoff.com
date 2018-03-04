@@ -81,64 +81,15 @@ a:visited {
 .pokemon {
 	text-align:center;
 }
-img.overwatch-dps {
-	width:100px;
-	height:100px;
+img.profile-pic {
+	width:200px;
+	height:200px;
 	background-color:light-gray;
 	margin:5px;
-	border:5px solid red;
+	border:5px solid gray;
 	padding:0px;
-	float:right;
+	float:left;
 }
-img.overwatch-dps-heal {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border-top:5px solid red;
-	border-left:5px solid red;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
-	padding:0px;
-	float:right;
-}
-img.overwatch-tank-main {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid turquoise;
-	padding:0px;
-	float:right;
-}
-img.overwatch-tank-off {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid #DDA0DD;
-	padding:0px;
-	float:right;
-}
-img.overwatch-defense {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid orange;
-	padding:0px;
-	float:right;
-}
-img.overwatch-healer {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid yellow;
-	padding:0px;
-	float:right;
-}
-
 .yellow-text {
 	color:yellow;
 }
