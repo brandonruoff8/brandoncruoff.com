@@ -87,6 +87,13 @@ a:visited {
 .pokemon {
 	text-align:center;
 }
+img.minecraft-mk7 {
+	width:400px;
+	background-color:light-gray;
+	margin:5px;
+	border:5px solid gray;
+	padding:0px;
+}	
 img.overwatch-dps {
 	width:100px;
 	height:100px;
