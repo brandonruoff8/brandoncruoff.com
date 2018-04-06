@@ -5,7 +5,6 @@
 	<title> First JavaScript Program </title>
 	
 	<script type="text/javascript">
-		// Just prints some stuff
 	
 		var imageNum = 0;
 		
@@ -33,7 +32,35 @@
 			writePara.innerHTML = "Well, " + name.value + ". You are awesome.";
 		}
 		
-		
+		function check_info()
+		{
+			var allowIn = false;
+			var validUser = ["BRANDON", "LOGAN", "JEREMIYAH", "JOSHUAH"];
+			var validPass = ["ruoff8", "jeffery9", "jeffery1", "jeffery2"];
+			var username = document.getElementById('username').value.toUpperCase();
+			var password = document.getElementById('password').value;
+			var info = document.getElementById('info');
+			if(username=="" || password=="")
+			{	
+				alert("Please fill in both fields.");
+				info.innerHTML = "Enter login information to continue.";
+				return false;
+			}
+			var i;
+			for(i = 0; i < validUser.length; i++)
+			{
+				if(username==validUser[i] && password==validPass[i])
+				{
+					allowIn = true;
+					break;
+				}
+			}
+			if(!allowIn)
+			{
+				info.innerHTML = "Incorrect username or password.";
+			}
+			return allowIn;
+		}	
 
 	</script>
 </head>
@@ -46,6 +73,12 @@
 	</form>
 	<p id="response"> </p>
 	<img width="100px" id="imageId" src="https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg" >
+	<form action="game.html" method="post" onsubmit="return check_info();">
+		Username: <input type="text" name="username" id="username"/><br/>
+		Password: <input type="password" name="password" id="password"/><br/>
+		<input type="submit" value="Login"/><br/>
+	</form>
+	<p id="info"> Enter login information to continue.</p>
 </body>
 
 </html>
