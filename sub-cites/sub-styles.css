@@ -87,6 +87,9 @@ a:visited {
 .pokemon {
 	text-align:center;
 }
+img.normal {
+	width:100px;
+}
 img.minecraft-mk7 {
 	width:360px;
 	background-color:light-gray;

@@ -6,21 +6,46 @@
 	
 	<script type="text/javascript">
 		// Just prints some stuff
-		document.write("¡Hola mundo! <br/>");
-		document.write("Goodbye world... <br/>");
+	
+		var imageNum = 0;
 		
-		var x = 8;
-		document.write("<h1> have " + x + " apples.</h2>");
-		alert("You are viewing Brandon's webpage!");
+		function change()
+		{
+			var image = document.getElementById("imageId");
+			if(imageNum == 0)
+			{
+				image.src = 'https://ih0.redbubble.net/image.98538055.2991/flat,1000x1000,075,f.u1.jpg';
+				imageNum = 1;
+			}
+			else if(imageNum == 1)
+			{
+				image.src = 'https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg';
+				imageNum = 0;
+			}	
+		}
+		
+		var timer = setInterval('change()', 2000);
+		
+		function write_stuff()
+		{
+			var writePara = document.getElementById('response');
+			var name = document.getElementById('name');
+			writePara.innerHTML = "Well, " + name.value + ". You are awesome.";
+		}
+		
 		
 
 	</script>
 </head>
 
 <body>
+	
 	<form>
-		<input type="button" value="Button" onclick="alert('You clicked my button!');"/>
+		What is your name? <input type="text" id="name"/><br/>
+		<input type="button" value="Enter" onclick="write_stuff();"/><br/>
 	</form>
+	<p id="response"> </p>
+	<img width="100px" id="imageId" src="https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg" >
 </body>
 
 </html>
