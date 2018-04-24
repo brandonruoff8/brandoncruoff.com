@@ -6,27 +6,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 	<script type="text/javascript">
 		var imageNum = 0;
+		var pictures = ['https://brain-images-ssl.cdn.dixons.com/8/1/10153218/u_10153218.jpg',
+						'https://ih0.redbubble.net/image.98538055.2991/flat,1000x1000,075,f.u1.jpg',
+						'https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg',
+						'https://scottiestech.info/wp-content/uploads/2009/08/paint.jpg',
+						'https://d1aeri3ty3izns.cloudfront.net/media/10/103678/1200/preview.jpg'];
+		
 		
 		function change()
 		{
 			var image = document.getElementById("imageId");
-			if(imageNum == 0)
+			image.src = pictures[imageNum];
+			imageNum++;
+			if(imageNum > 4)
 			{
-				image.src = 'https://ih0.redbubble.net/image.98538055.2991/flat,1000x1000,075,f.u1.jpg';
-				imageNum = 1;
-			}
-			else if(imageNum == 1)
-			{
-				image.src = 'https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg';
 				imageNum = 0;
-			}	
+			}
+			
 		}
 		
 		var timer = setInterval('change()', 2000);
+		
+		function check_info()
+		{
+			var allowIn = false;
+			var validUser = ["BRANDON", "LOGAN", "JEREMIYAH", "JOSHUAH"];
+			var validPass = ["ruoff8", "jeffery9", "jeffery1", "jeffery2"];
+			var username = document.getElementById('username').value.toUpperCase();
+			var password = document.getElementById('password').value;
+			var info = document.getElementById('info');
+			if(username=="" || password=="")
+			{	
+				alert("Please fill in both fields.");
+				info.innerHTML = "Enter login information to continue.";
+				return false;
+			}
+			var i;
+			for(i = 0; i < validUser.length; i++)
+			{
+				if(username==validUser[i] && password==validPass[i])
+				{
+					allowIn = true;
+					break;
+				}
+			}
+			if(!allowIn)
+			{
+				info.innerHTML = "Incorrect username or password.";
+			}
+			return allowIn;
+		}	
 	</script>
 </head>
 <body>
-	<h1> Brandon C Ruoff <h1>
+	<h1> Brandon C. Ruoff <h1>
 
 	<p class="center-whole">
 		<a href="sub-cites/computer-science.html" class="gray-button" > Computer Science </a>
@@ -38,13 +71,22 @@
 	<p> <img src="https://scontent.fcps1-1.fna.fbcdn.net/v/t1.0-1/p240x240/24129913_1782312491780135_1751515964843666525_n.jpg?oh=4565f694f06a9818fb9b685aa8ec0c04&oe=5B0AED0B"
 		class="profile-pic">
 	</p>
-	<img width="100px" id="imageId" src="https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg" >
+	<img class="small-pic" id="imageId" src="https://brain-images-ssl.cdn.dixons.com/8/1/10153218/u_10153218.jpg" >
 	<h2 class="center-whole white-text">
 		Contact me:
 	</h2>
 	<p class="center-whole white-text">
 	E-mail: brandoru15@gmail.com <br>
 	Cell Phone: (816) 447-2270
+	</p>
+	<p id="info" class="center-whole white-text">
+	Enter login credentials to access the secret section of Brandon's webpage. <br>
+	(Spoiler alert: This is the most insecure login page in the world. Feel free to "hack" into it.)
+	<form class="center white-text" action="sub-cites/game.html" method="get" onsubmit="return check_info();">
+		Username: <input type="text" name="username" id="username"/><br/>
+		Password: <input type="password" name="password" id="password"/><br/>
+		<input type="submit" value="Login"/><br/>
+	</form>
 	</p>
 	
 </body>

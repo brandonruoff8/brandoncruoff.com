@@ -90,6 +90,13 @@ img.profile-pic {
 	padding:0px;
 	text-align:center;
 }
+img.small-pic {
+	width: 150px;
+	height: 150px;
+}
+form.center {
+	text-align: center;
+}
 .yellow-text {
 	color:yellow;
 }
