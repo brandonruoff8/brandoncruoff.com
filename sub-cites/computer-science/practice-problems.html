@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<a href="../computer-science.html" class="gray-button"> Back </a>	
+	<title> Practice Problems </title>
+	<link rel="stylesheet" href="../../styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+	<h1> Practice Problems </h1>
+	
+	<h2> Two Sum Problem </h2>
+	<p class="center-whole">
+	This program will take in a single number and a list of numbers, and will figure out which pairs
+	<br>
+	of numbers from the list will add up to the single number.
+	<br>
+	<br>
+	<input type="text" id="searchNum" value="15">
+	<br>
+	<input type="text" id="searchList" value="1 2 3 4 5 6 7 8 9 10">
+	<br>
+	<button onclick="findTwoSum()">Enter</button>
+	</p>
+	
+	<script>
+	function findTwoSum()
+	{
+		var num = document.getElementById("searchNum").value;
+		var numList = document.getElementById("searchList").value;
+		var output = "";
+		numList = numList.split(" ");
+		try
+		{
+			for(var i = 0; i < numList.length; i++)
+			{
+				for(var j = i + 1; j < numList.length; j++)
+				{
+					num1 = parseInt(numList[i]);
+					num2 = parseInt(numList[j]);
+					if((num1 + num2) == num)
+					{
+						output = output 
+							+ "Match found: ["
+							+ num1
+							+ ", "
+							+ num2
+							+ "]"
+							+ "<br>"
+					}
+				}			
+			}
+			document.getElementById("output").innerHTML = output;
+		}
+		catch (err)
+		{
+			document.getElementById("output").innerHTML = "Error occured.";
+		}	
+	}
+	
+	
+	</script>
+	
+	<p class="center-whole white-text"	id="output"> </p>
+	
+<body>
+</html>
