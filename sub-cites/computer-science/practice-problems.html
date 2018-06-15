@@ -20,7 +20,7 @@
 	<br>
 	<input type="text" id="searchList" value="1 2 3 4 5 6 7 8 9 10">
 	<br>
-	<button onclick="findTwoSum()">Enter</button>
+	<button onclick="findTwoSum()"> Enter </button>
 	</p>
 	
 	<script>
@@ -62,6 +62,190 @@
 	</script>
 	
 	<p class="center-whole white-text"	id="output"> </p>
+	
+	<h2> Integer to Roman Numeral </h2>
+	<p class="center-whole">
+	This program will take a single number and turn it into roman numerals.
+	<br>
+	<br>
+	<input type="text" id="intToRom" value="15">
+	<br>
+	<button onclick="intToRom()"> Enter </button>
+	</p>
+	
+	<script>
+	function intToRom()
+	{
+		var toRomanNum = "";
+		var currentNum = document.getElementById("intToRom").value;
+		if(currentNum == 0)
+		{
+			toRomanNum = "nulla";
+		}
+		while(currentNum > 0)
+		{
+			if(currentNum >= 1000)
+			{
+				toRomanNum += "M";
+				currentNum -= 1000;
+			}
+			else if(currentNum >= 500)
+			{
+				if (currentNum/100 == 9)
+				{
+					toRomanNum += "CM";
+					currentNum -= 900;
+				}
+				else
+				{
+					toRomanNum += "D";
+					currentNum -= 500;
+				}	
+			}
+			else if(currentNum >= 100)
+			{
+				if(currentNum/100 == 4)
+				{
+					toRomanNum += "CD";
+					currentNum -= 400;
+				}
+				else
+				{
+					toRomanNum += "C";
+					currentNum -= 100;
+				}
+			}
+			else if(currentNum >= 50)
+			{
+				if(currentNum/10 == 9)
+				{
+					toRomanNum += "XC";
+					currentNum -= 90;
+				}
+				else
+				{
+					toRomanNum += "L";
+					currentNum -= 50;
+				}
+			}
+			else if(currentNum >= 10)
+			{
+				if(currentNum/10 == 4)
+				{
+					toRomanNum += "XL";
+					currentNum -= 40;
+				}
+				else
+				{
+					toRomanNum += "X";
+					currentNum -= 10;
+				}
+			}
+			else if(currentNum >= 5)
+			{
+				if(currentNum == 9)
+				{
+					toRomanNum += "IX";
+					currentNum -= 9;
+				}
+				else
+				{
+					toRomanNum += "V";
+					currentNum -= 5;
+				}
+			}
+			else
+			{
+				if(currentNum == 4)
+				{
+					toRomanNum += "IV";
+					currentNum -= 4;
+				}
+				else
+				{
+					toRomanNum += "I";
+					currentNum -= 1;
+				}
+			}
+		}
+		document.getElementById("output2").innerHTML = toRomanNum;
+	}
+	
+	
+	
+	
+	
+	</script>
+	
+	<p class="center-whole white-text"	id="output2"> </p>
+	
+	<h2> Palindromic Substring </h2>
+	<p class="center-whole">
+	This program will take in a single word and find the largest palindrome (word that is
+	<br>
+	the same forwards and backwards) lies within the given word. If the largest is of size 1
+	<br>
+	(a single letter) then it returns the first letter in the word.
+	<br>
+	<br>
+	<input type="text" id="inputWord" value="Banana">
+	<br>
+	<button onclick="palinSub()"> Enter </button>
+	</p>
+	
+	<script>
+	function palinSub()
+	{
+		var ogWord = document.getElementById("inputWord").value;
+		document.getElementById("output3").innerHTML = ogWord;
+		var word = ogWord.toLowerCase();
+		var palindrome = ogWord.substring(0, 1);
+		var palSize = 1;
+		document.getElementById("output3").innerHTML = word;
+		for(var first = 0; first < word.length - 1; first = first + 1)
+		{
+			for(var last = first + 1; last < word.length; last = last + 1)
+			{
+				var partOfString = word.substring(first, last + 1);
+				if(checkIfPalin(partOfString))
+				{
+					if(last - first + 1 > palSize) 
+					{
+						palSize = last - first + 1;
+						palindrome = partOfString;
+					}
+				}
+			}
+		}
+		document.getElementById("output3").innerHTML = "Original word: " + ogWord + "<br>" + "Best palindrome had size: " + palSize + "<br>" + "\"" + palindrome + "\"";
+	}
+	
+	function  checkIfPalin(subString)
+	{
+		var left = parseInt((subString.length - 1)/2);
+		var right = parseInt(subString.length/2);
+		while(left >= 0 && right < subString.length)
+		{
+			if(!(subString.charAt(left) == subString.charAt(right)))
+			{
+				return false;
+			}
+			left = left - 1;
+			right = right + 1;
+		}
+		return true;
+	}
+	</script>
+	
+	<p class="center-whole white-text" id="output3"> </p>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 <body>
 </html>
