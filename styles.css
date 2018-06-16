@@ -26,6 +26,10 @@ a:visited {
 	color:white;
 	text-decoration:none;
 }
+.cul {
+  text-align: center;
+  list-style-position: inside;
+}
 .black-box {
     background-color:black;
 	border:5px solid blue;
