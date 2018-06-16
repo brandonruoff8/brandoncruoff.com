@@ -54,17 +54,22 @@ a:visited {
     font-size: 16px;
 	cursor: pointer;
 } 
+.container {
+	display: flex;
+}
 .center-whole {
 	text-align:center;
 }
 .left-half {
 	width: 50%;
+	float: left;
 }
 .right-half {
 	width: 50%;
+	float: right;
 }
 .left-side {
-	width: 75%;
+	width: 70%;
 	float: left;
 }
 .right-side {
@@ -85,6 +90,12 @@ a:visited {
 }
 .red-bg {
 	background-color:red;
+}
+.white-outline {
+	border: 3px solid white;
+	padding: 5px;
+	overflow: auto;	
+	
 }
 .red-outline {
 	border: 3px solid #ff4d4d;
@@ -120,6 +131,14 @@ img.small-pic {
 	width: 150px;
 	height: 150px;
 }
+img.med-pic {
+	width: 200px;
+	height: 200px;
+}
+img.pokepic {
+	width: 200px;
+	height: 200px;
+}
 img.minecraft-mk7 {
 	width:360px;
 	background-color:light-gray;
@@ -127,13 +146,8 @@ img.minecraft-mk7 {
 	border:5px solid gray;
 	padding:0px;
 }	
-img.door-dec {
-	transform: rotate(90deg);
-	width:360px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid gray;
-	padding:0px;
+img.rotate180 {
+		transform: rotate(180deg);
 }
 img.overwatch-small {
 	width:100px;
