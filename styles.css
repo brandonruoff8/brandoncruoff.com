@@ -1,9 +1,9 @@
 body {
 	font-family:sans-serif;
-    background: #3B4E7F;
+	font-size: 12pt;
+    background-color: #3B4E7F;
 	margin:0px;
 	border:0px;
-	off-set:black;
 	padding: 10px;
 }
 h1 {
@@ -57,11 +57,19 @@ a:visited {
 .center-whole {
 	text-align:center;
 }
-.right-side {
-	text-align:right;
+.left-half {
+	width: 50%;
+}
+.right-half {
+	width: 50%;
 }
 .left-side {
-	text-align:left;
+	width: 75%;
+	float: left;
+}
+.right-side {
+	width: 25%;
+	float: right;
 }
 .right-float {
 	float:right;
@@ -74,22 +82,24 @@ a:visited {
 }
 .black-bg {
 	background-color:black;
-	color:white;
 }
 .red-bg {
 	background-color:red;
 }
 .red-outline {
-	border: 2px solid #ff4d4d;
-	padding: 5px
+	border: 3px solid #ff4d4d;
+	padding: 5px;
+	overflow: auto;
 }
 .blue-outline {
-	border: 2px solid #8080ff;
-	padding: 5px
+	border: 3px solid #8080ff;
+	padding: 5px;
+	overflow: auto;
 }
 .yellow-outline {
-	border: 2px solid #ffff99;
-	padding: 5px
+	border: 3px solid #ffff99;
+	padding: 5px;
+	overflow: auto;
 }
 .extra-box-padding {
 	padding:5px;
@@ -125,62 +135,37 @@ img.door-dec {
 	border:5px solid gray;
 	padding:0px;
 }
-img.overwatch-dps {
+img.overwatch-small {
 	width:100px;
 	height:100px;
-	background-color:light-gray;
-	margin:5px;
+	background-color: black;
+}
+img.overwatch-dps {
 	border:5px solid red;
-	padding:0px;
-	float:right;
 }
 img.overwatch-dps-heal {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
 	border-top:5px solid red;
 	border-left:5px solid red;
 	border-bottom:5px solid yellow;
 	border-right:5px solid yellow;
-	padding:0px;
-	float:right;
+}
+img.overwatch-tank-heal {
+	border-top:5px solid turquoise;
+	border-left:5px solid turquoise;
+	border-bottom:5px solid yellow;
+	border-right:5px solid yellow;
 }
 img.overwatch-tank-main {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
 	border:5px solid turquoise;
-	padding:0px;
-	float:right;
 }
 img.overwatch-tank-off {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid #DDA0DD;
-	padding:0px;
-	float:right;
+	border-top:5px solid turquoise;
+	border-left:5px solid turquoise;
+	border-bottom:5px solid red;
+	border-right:5px solid red;
 }
-img.overwatch-defense {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
-	border:5px solid orange;
-	padding:0px;
-	float:right;
-}
-img.overwatch-healer {
-	width:100px;
-	height:100px;
-	background-color:light-gray;
-	margin:5px;
+img.overwatch-heal {
 	border:5px solid yellow;
-	padding:0px;
-	float:right;
 }
 form.center {
 	text-align: center;
