@@ -143,12 +143,17 @@ img.pokepic {
 	width: 200px;
 	height: 200px;
 }
-img.minecraft-mk7 {
-	width:360px;
+img.mc-mk7-cover {
+	width:250px;
 	background-color:light-gray;
 	margin:5px;
 	border:5px solid gray;
-	padding:0px;
+}
+img.minecraft-mk7 {
+	width:400px;
+	background-color:light-gray;
+	margin:5px;
+	border:5px solid gray;
 }	
 img.rotate180 {
 		transform: rotate(180deg);
@@ -192,7 +197,7 @@ form.center {
 	color:yellow;
 }
 .purple-text {
-	color:purple;
+	color:#dc42f4;
 }
 .red-text {
 	color:red;
@@ -206,14 +211,17 @@ form.center {
 .pink-text {
 	color:#F660AB;
 }
+.light-pink-text {
+	color:#ffb7fb;
+}
 .white-text {
 	color:white;
 }
 .tan-text {
 	color:#d2b48c;
 }
-.navy-text {
-	color:navy;
+.draco-text {
+	color:#7359d1;
 }
 .lavender-text {
 	color:#eedcfd;
