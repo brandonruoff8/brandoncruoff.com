@@ -57,7 +57,111 @@ a:visited {
 	border-radius: 5px;
     font-size: 16px;
 	cursor: pointer;
-} 
+}
+.damage-headline-left {
+    background-color: #ff4d4d;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.damage-headline-right {
+    background-color: #ff4d4d;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.tank-headline-left {
+    background-color: #8080ff;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.tank-headline-right {
+    background-color: #8080ff;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}			
+.support-headline-left {
+    background-color: #ffff99;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}	
+.player-headline-right {
+	background-color: #bababa;
+    border: none;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:80px;
+}	
+.player-headline-mid {
+	background-color: #bababa;
+    border: none;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width:80px;
+}	
+.gamertag-headline {
+	background-color: #56af62;
+    border: none;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+		border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:240px;
+}	
 .container {
 	display: flex;
 }
@@ -193,17 +297,29 @@ img.overwatch-heal {
 form.center {
 	text-align: center;
 }
+.almost-black-text {
+	color:#282828;
+}
 .yellow-text {
 	color:yellow;
 }
 .purple-text {
-	color:#dc42f4;
+	color:#d06ddb;
 }
 .red-text {
 	color:red;
 }
+.red-orange-text {
+	color:#f45c16;
+}
 .maroon-text {
-	color:maroon;
+	color:#a83939;
+}
+.light-blue-text {
+	color:#3ebef9;
+}
+.sand-text {
+	color:#edda0e;
 }
 .turquoise-text {
 	color:turquoise;
