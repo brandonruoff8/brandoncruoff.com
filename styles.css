@@ -258,9 +258,12 @@ img.minecraft-mk7 {
 	background-color:light-gray;
 	margin:5px;
 	border:5px solid gray;
+}
+img.rotate90ccw {
+transform: rotate(270deg);
 }	
 img.rotate180 {
-		transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 img.overwatch-small {
 	width:100px;
