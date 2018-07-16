@@ -176,6 +176,16 @@ a:visited {
 	width: 50%;
 	float: right;
 }
+.left-third {
+	width: 30%;
+	float: left;
+}
+.middle-third {
+}
+.right-third {
+	width: 30%;
+	float: right;
+}
 .left-side {
 	width: 70%;
 	float: left;
