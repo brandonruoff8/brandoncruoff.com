@@ -122,7 +122,20 @@ a:visited {
 	border-bottom-left-radius: 20px;
     font-size: 16px;
 	width:60px;
-}	
+}
+.support-headline-right {
+    background-color: #ffff99;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}		
 .filler-headline-left {
     background-color: #ea830e;
     border: none;
@@ -334,6 +347,12 @@ img.overwatch-tank-off {
 }
 img.overwatch-heal {
 	border:5px solid yellow;
+}
+img.overwatch-heal-speed {
+	border-top:5px solid yellow;
+	border-left:5px solid yellow;
+	border-bottom:5px solid #24ea0e;
+	border-right:5px solid #24ea0e;
 }
 form.center {
 	text-align: center;
