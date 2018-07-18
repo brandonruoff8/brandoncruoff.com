@@ -123,6 +123,19 @@ a:visited {
     font-size: 16px;
 	width:60px;
 }	
+.filler-headline-left {
+    background-color: #ea830e;
+    border: none;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}	
 .player-headline-right {
 	background-color: #bababa;
     border: none;
@@ -151,6 +164,21 @@ a:visited {
 	background-color: #56af62;
     border: none;
     color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+		border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:240px;
+}	
+.pctag-headline {
+	background-color: #66ff84;
+    border: none;
+    color: #282828;
     padding:10px;
     text-align: center;
     text-decoration: none;
