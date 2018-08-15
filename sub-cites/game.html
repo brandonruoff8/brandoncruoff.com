@@ -6,7 +6,7 @@
     <title>Brandon Secret Page</title>
 	<link rel="stylesheet" href="../styles.css">
 	<center>
-	<h1> SECRET WEBPAGE OF BRANDON RUOFF </h1>
+	<h1> Rainbow Snake </h1>
 	</center>
 	
     <style>
@@ -16,38 +16,69 @@
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+<canvas id="snakeCanvas" width="500" height="500"></canvas>
 
 <script>
-	var canvas = document.getElementById("myCanvas");
+	var canvas = document.getElementById("snakeCanvas");
 	var ctx = canvas.getContext("2d");
+	var start_game = true;
 	var colorNum = 0;
-	var colorArray = ["red", "orange", "yellow", "green", "blue", "violet"];
-	var x = 100;
-	var y = 100;
+	var colorArray = ["red", "#ff6600", "orange", "#e6e600", "#00ff00", "green", "#00ccff", "blue", "#9933ff", "violet"];
+	var snake_x = 100;								//yellow
+	var snake_y = 100;
+	var snake_length = 1;
+	var food_x = 300;
+	var food_y = 100;
+	var food_size = 5;
 	var radius = 10;
-	var direction = "";
+	var speed = 0.75;
+	var direction = "right";
+	
+	var drawTimer = setInterval('play()', 2);
+	var colorTimer = setInterval('changeColor()', 300);
 	
 	document.addEventListener("keydown", keyDownListener, false);
 	
 	function keyDownListener(e) 
 	{
-		if(e.keyCode == 37) 
+		if(direction=="stop")
 		{
-			direction = "left";
+			if(e.keyCode == 32)
+			{
+				reset();
+			}
 		}
-		if(e.keyCode == 38) 
+		else
 		{
-			direction = "up";
+			if(e.keyCode == 37 && direction != "right") 
+			{
+				direction = "left";
+			}
+			if(e.keyCode == 38 && direction != "down") 
+			{
+				direction = "up";
+			}
+			if(e.keyCode == 39 && direction != "left") 
+			{	
+				direction = "right";
+			}
+			if(e.keyCode == 40 && direction != "up")
+			{
+				direction = "down";
+			}
 		}
-		if(e.keyCode == 39) 
-		{	
-			direction = "right";
-		}
-		if(e.keyCode == 40)
-		{
-			direction = "down";
-		}
+	}
+	
+	function reset()
+	{
+		start_game = true;
+		snake_length = 1;
+		delay = 0;
+		snake_x = 100;
+		snake_y = 100;
+		food_x = 300;
+		food_y = 100;
+		direction = "right";
 	}
 	
 	/*
@@ -72,17 +103,26 @@
 	}
 	*/
 	
-	function draw ()
+	function play()
 	{
-		draw_circle();
-		move();
+		if(start_game)
+		{
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.textAlign = "left";
+			ctx.font = "10px Arial";
+			ctx.fillText("Snake length: " + snake_length, 2, 10);
+			draw_food()
+			draw_circle();
+			move_snake();
+			check_collisions();
+		}
+
 	}
 	
 	function draw_circle()
 	{
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.beginPath();
-		ctx.arc(x, y, 10, 0, Math.PI*2);
+		ctx.arc(snake_x, snake_y, radius, 0, Math.PI*2);
 		ctx.fillStyle = colorArray[colorNum];
 		ctx.fill();
 		ctx.closePath();
@@ -91,35 +131,106 @@
 	function changeColor()
 	{
 		colorNum++;		
-		if(colorNum==6)
+		if(colorNum==colorArray.length)
 		{
 			colorNum = 0;
 		}
 	}
 	
-	function move()
+	function check_collisions()
 	{
-		if(direction=="left" && (x - radius >= 0))
+		var hit_food = false;
+		var hit_wall = false;
+		if( ((snake_x - radius < food_x + food_size) && (snake_x + radius > food_x - food_size)) 
+			&& 
+			((snake_y - radius < food_y + food_size) && (snake_y + radius > food_y - food_size)))
 		{
-			x = x - 2;
+			hit_food = true;
 		}
-		else if(direction=="up" && (y - radius >= 0))
+		if((snake_x - radius <= 0) || (snake_x + radius >= canvas.width) || (snake_y - radius <= 0) || (snake_y + radius >= canvas.height))
 		{
-			y = y - 2;
+			hit_wall = true;
 		}
-		else if(direction=="right" && (x + radius <= canvas.width))
+		if(hit_food)
 		{
-			x = x + 2;
+			move_food();
+			snake_length++;
 		}
-		else if(direction=="down" && (y + radius <= canvas.height))
+		if(hit_wall)
 		{
-			y = y + 2;
+			direction = "stop";
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.textAlign = "center";
+			ctx.font = "30px Arial";
+			ctx.fillText("Game Over", canvas.width/2, canvas.height/2);
+			ctx.font = "15px Arial";
+			ctx.fillText("press [space bar] to try again", canvas.width/2, canvas.height/2 + 50);
+			wait_for_space();
 		}
 	}
 	
-	var drawTimer = setInterval('draw()', 5);
-	var colorTimer = setInterval('changeColor()', 400);
+	function move_snake()
+	{
+		if(direction=="left")
+		{
+			snake_x = snake_x - speed;
+		}
+		else if(direction=="up")
+		{
+			snake_y = snake_y - speed;
+		}
+		else if(direction=="right")
+		{
+			snake_x = snake_x + speed;
+		}
+		else if(direction=="down")
+		{
+			snake_y = snake_y + speed;
+		}
+		else if(direction=="stop")
+		{
+		}
+	}
+	
+	function move_food()
+	{
+		
+		food_x = Math.random()*500;
+		food_y = Math.random()*500;	
+		if(food_x < 10)
+		{
+			food_x = 10;
+		}
+		if(food_x > 490)
+		{
+			food_x = 490;
+		}
+		if(food_y < 10)
+		{
+			food_y = 10;
+		}
+		if(food_y > 490)
+		{
+			food_y = 490;
+		}
+	}
+	
+	function draw_food()
+	{
+		ctx.beginPath();
+		ctx.arc(food_x, food_y, food_size, 0, Math.PI*2);
+		ctx.fillStyle = "black";
+		ctx.fill();
+		ctx.closePath();
+	}
+
 </script>
+
+<br>
+
+<p id="printArea" class="center-whole">
+	
+</p>
 
 </body>
 </html>
