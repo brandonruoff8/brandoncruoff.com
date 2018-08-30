@@ -47,7 +47,7 @@ a:visited {
     font-size: 20px;
 } 
 .gray-button {
-    background-color: gray;
+    background-color: #696969;
     border: none;
     color: white;
     padding:10px;
@@ -57,17 +57,6 @@ a:visited {
 	border-radius: 5px;
     font-size: 16px;
 	cursor: pointer;
-}
-.gray-box {
-    background-color: gray;
-    border: none;
-    color: white;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-radius: 5px;
-    font-size: 16px;
 }
 .damage-headline-left {
     background-color: #ff4d4d;
@@ -222,8 +211,8 @@ a:visited {
 }
 .left-half {
 	width: 50%;
-	float: left;
-}
+
+	}
 .right-half {
 	width: 50%;
 	float: right;
@@ -243,7 +232,7 @@ a:visited {
 	float: left;
 }
 .right-side {
-	width: 25%;
+	width: 20%;
 	float: right;
 }
 .right-float {
@@ -263,7 +252,7 @@ a:visited {
 }
 .white-outline {
 	border: 3px solid white;
-	padding: 5px;
+	padding: 10px;
 	overflow: auto;	
 	
 }
@@ -369,8 +358,25 @@ img.overwatch-heal-speed {
 	border-bottom:5px solid #24ea0e;
 	border-right:5px solid #24ea0e;
 }
+img.poke-game-cover {
+	width: 100px;
+	height: 100px;
+}
 form.center {
 	text-align: center;
+}
+table {
+	width: 90%;
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+}
+th {
+	background-color: #696969;
 }
 .almost-black-text {
 	color:#282828;
