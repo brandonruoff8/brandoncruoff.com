@@ -228,12 +228,18 @@ a:visited {
 	float: right;
 }
 .left-side {
-	width: 70%;
+	width: 75%;
 	float: left;
 }
-.right-side {
+.right-side-ow {
 	width: 20%;
 	float: right;
+	text-align: right;
+}
+.right-side-poke {
+	width: 20%;
+	float: right;
+	text-align: center;
 }
 .right-float {
 	float:right;
@@ -258,17 +264,17 @@ a:visited {
 }
 .red-outline {
 	border: 3px solid #ff4d4d;
-	padding: 5px;
+	padding: 10px;
 	overflow: auto;
 }
 .blue-outline {
 	border: 3px solid #8080ff;
-	padding: 5px;
+	padding: 10px;
 	overflow: auto;
 }
 .yellow-outline {
 	border: 3px solid #ffff99;
-	padding: 5px;
+	padding: 10px;
 	overflow: auto;
 }
 .extra-box-padding {
