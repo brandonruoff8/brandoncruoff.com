@@ -49,6 +49,7 @@ a:visited {
 .gray-button {
     background-color: #696969;
     border: none;
+	margin-bottom: 5px;
     color: white;
     padding:10px;
     text-align: center;
