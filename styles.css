@@ -2,7 +2,7 @@ body {
 	font-family:sans-serif;
 	font-size: 12pt;
     background-color: #3B4E7F;
-	margin:0px;
+	margin-top:60px;
 	border:0px;
 	padding: 10px;
 }
@@ -50,6 +50,30 @@ a:visited {
     background-color: #696969;
     border: none;
 	margin-bottom: 5px;
+    color: white;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 5px;
+    font-size: 16px;
+	cursor: pointer;
+}
+.top-strip {
+	background-color: #00004d;
+	width:100%;
+	position: fixed;
+	top:0px;
+	left:0px;
+	height:60px;
+}
+.back-button {
+	background-color: #696969;
+    border: none;
+	position:fixed;
+	top:10px;
+	left:10px;
+	float: left;
     color: white;
     padding:10px;
     text-align: center;
