@@ -249,6 +249,42 @@ a:visited {
     font-size: 16px;
 	width:160px;
 }	
+.skill-headline {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
+.sr-headline-xbox {
+	background-color: #7E5FA4;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
+.sr-headline-pc {
+	background-color: #A48FC0;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
 .container {
 	display: flex;
 	justify-content: space-between;
