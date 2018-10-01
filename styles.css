@@ -102,6 +102,17 @@ a:visited {
 .centering {
 	text-align:center;
 }
+.align-left {
+	text-align:left;
+}
+.poke-rant {
+	border: 3px solid black;
+	color: white;
+	text-align: left;
+	margin: 20px;
+	padding: 20px;
+	text-indent: 30px;
+}	
 .left-half {
 	width: 50%;
 	float: left;

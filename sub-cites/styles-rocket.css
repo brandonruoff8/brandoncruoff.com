@@ -1,8 +1,14 @@
-.dark-blue-outline {
+.dark-blue-outline-left {
 	border: 3px solid #00004d;
 	margin: 10px;
-	width: 48%;
+	width: 47%;
 	float: left;
+}
+.dark-blue-outline-right {
+	border: 3px solid #00004d;
+	margin: 10px;
+	width: 47%;
+	float: right;
 }
 .player-headline {
 	background-color: #bababa;
@@ -57,7 +63,7 @@
     text-align: center; 
     display: inline-block;
     font-size: 16px;
-	width:95%;
+	width:90%;
 }		
 .rank-type {
 	background-color: #80B1D0;
@@ -70,10 +76,10 @@
 	width:30%;
 }	
 .left-side-rl {
-	width: 37%;
+	width: 38%;
 	float: left;
 }
 .right-side-rl {
-	width: 63%;
+	width: 60%;
 	float: right;
 }
