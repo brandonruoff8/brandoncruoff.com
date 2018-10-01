@@ -1,0 +1,226 @@
+img.overwatch-logo{
+	background-color: white;
+	border:5px solid gray;
+}
+img.overwatch-small {
+	width:100px;
+	height:100px;
+	background-color: black;
+}
+img.overwatch-dps {
+	border:5px solid red;
+}
+img.overwatch-dps-heal {
+	border-top:5px solid red;
+	border-left:5px solid red;
+	border-bottom:5px solid yellow;
+	border-right:5px solid yellow;
+}
+img.overwatch-tank-heal {
+	border-top:5px solid turquoise;
+	border-left:5px solid turquoise;
+	border-bottom:5px solid yellow;
+	border-right:5px solid yellow;
+}
+img.overwatch-tank-main {
+	border:5px solid turquoise;
+}
+img.overwatch-tank-off {
+	border-top:5px solid turquoise;
+	border-left:5px solid turquoise;
+	border-bottom:5px solid red;
+	border-right:5px solid red;
+}
+img.overwatch-heal {
+	border:5px solid yellow;
+}
+img.overwatch-heal-speed {
+	border-top:5px solid yellow;
+	border-left:5px solid yellow;
+	border-bottom:5px solid #24ea0e;
+	border-right:5px solid #24ea0e;
+}
+.left-side-ow {
+	width: 74%;
+	float: left;
+}
+.right-side-ow {
+	width: 25%;
+	float: right;
+	text-align: right;
+}
+.damage-headline-left {
+    background-color: #ff4d4d;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.damage-headline-right {
+    background-color: #ff4d4d;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.tank-headline-left {
+    background-color: #8080ff;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.tank-headline-right {
+    background-color: #8080ff;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}			
+.support-headline-left {
+    background-color: #ffff99;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}
+.support-headline-right {
+    background-color: #ffff99;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}		
+.filler-headline-left {
+    background-color: #ea830e;
+    color: #bababa;
+    padding:10px;
+    text-align: center;
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}	
+.player-headline-right {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center;   
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:80px;
+}	
+.player-headline-mid {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+	width:80px;
+}	
+.xbox-headline {
+	background-color: white;
+    color: #56af62;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width:60px;
+}	
+.xbox-gamertag {
+	background-color: #56af62;
+    color: white;
+    padding:10px;
+    text-align: center;   
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
+.pc-headline {
+	background-color: #282828;
+    color: white;
+    padding:10px;
+    text-align: center;   
+    display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+    font-size: 16px;
+	width: 60px;
+}	
+.pc-gamertag {
+	background-color: white;
+    color: #282828;
+    padding:10px;
+    text-align: center;
+	font: bold;   
+    display: inline-block;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}	
+.skill-headline {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
+.sr-headline-xbox {
+	background-color: #7E5FA4;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}
+.sr-headline-pc {
+	background-color: #A48FC0;
+    color: white;
+    padding:10px;
+    text-align: center;
+	font: bold;
+    display: inline-block;
+	border-radius: 20px;
+    font-size: 16px;
+	width:160px;
+}

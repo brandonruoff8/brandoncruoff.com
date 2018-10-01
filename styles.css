@@ -26,6 +26,18 @@ a:visited {
 	color:white;
 	text-decoration:none;
 }
+.dead-middle {
+	text-align: center;
+	margin-top: 150px;
+}
+.game-nav {
+	width: 300px;
+	margin: 40px;
+	padding: 10px;
+	border: 5px solid #696969;
+	background-color: #A2C0DC;
+	border-image-width: 10px;
+}
 .cul {
   text-align: center;
   list-style-position: inside;
@@ -83,213 +95,11 @@ a:visited {
     font-size: 16px;
 	cursor: pointer;
 }
-.damage-headline-left {
-    background-color: #ff4d4d;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}
-.damage-headline-right {
-    background-color: #ff4d4d;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}
-.tank-headline-left {
-    background-color: #8080ff;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}
-.tank-headline-right {
-    background-color: #8080ff;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}			
-.support-headline-left {
-    background-color: #ffff99;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}
-.support-headline-right {
-    background-color: #ffff99;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}		
-.filler-headline-left {
-    background-color: #ea830e;
-    border: none;
-    color: #bababa;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}	
-.player-headline-right {
-	background-color: #bababa;
-    border: none;
-    color: white;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:80px;
-}	
-.player-headline-mid {
-	background-color: #bababa;
-    border: none;
-    color: white;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	width:80px;
-}	
-.xbox-headline {
-	background-color: white;
-    border: none;
-    color: #56af62;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width:60px;
-}	
-.xbox-gamertag {
-	background-color: #56af62;
-    border: none;
-    color: white;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:160px;
-}
-.pc-headline {
-	background-color: #282828;
-    color: white;
-    padding:10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-    font-size: 16px;
-	width: 60px;
-}	
-.pc-gamertag {
-	background-color: white;
-    color: #282828;
-    padding:10px;
-    text-align: center;
-	font: bold;
-    text-decoration: none;
-    display: inline-block;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-    font-size: 16px;
-	width:160px;
-}	
-.skill-headline {
-	background-color: #bababa;
-    color: white;
-    padding:10px;
-    text-align: center;
-	font: bold;
-    text-decoration: none;
-    display: inline-block;
-	border-radius: 20px;
-    font-size: 16px;
-	width:160px;
-}
-.sr-headline-xbox {
-	background-color: #7E5FA4;
-    color: white;
-    padding:10px;
-    text-align: center;
-	font: bold;
-    text-decoration: none;
-    display: inline-block;
-	border-radius: 20px;
-    font-size: 16px;
-	width:160px;
-}
-.sr-headline-pc {
-	background-color: #A48FC0;
-    color: white;
-    padding:10px;
-    text-align: center;
-	font: bold;
-    text-decoration: none;
-    display: inline-block;
-	border-radius: 20px;
-    font-size: 16px;
-	width:160px;
-}
 .container {
 	display: flex;
 	justify-content: space-between;
 }
-.center-whole {
+.centering {
 	text-align:center;
 }
 .left-half {
@@ -310,15 +120,6 @@ a:visited {
 .right-third {
 	width: 30%;
 	float: right;
-}
-.left-side-ow {
-	width: 74%;
-	float: left;
-}
-.right-side-ow {
-	width: 25%;
-	float: right;
-	text-align: right;
 }
 .left-side-poke {
 	width: 70%;
@@ -388,6 +189,9 @@ img.profile-pic {
 	padding:0px;
 	text-align:center;
 }
+img.heading {
+	width: 300px;
+}	
 img.small-pic {
 	width: 150px;
 	height: 150px;
@@ -413,52 +217,10 @@ img.minecraft-mk7 {
 	border:5px solid gray;
 }
 img.rotate90ccw {
-transform: rotate(270deg);
+	transform: rotate(270deg);
 }	
 img.rotate180 {
 	transform: rotate(180deg);
-}
-img.overwatch-logo{
-	background-color: white;
-	border:5px solid gray;
-}
-img.overwatch-small {
-	width:100px;
-	height:100px;
-	background-color: black;
-}
-img.overwatch-dps {
-	border:5px solid red;
-}
-img.overwatch-dps-heal {
-	border-top:5px solid red;
-	border-left:5px solid red;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
-}
-img.overwatch-tank-heal {
-	border-top:5px solid turquoise;
-	border-left:5px solid turquoise;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
-}
-img.overwatch-tank-main {
-	border:5px solid turquoise;
-}
-img.overwatch-tank-off {
-	border-top:5px solid turquoise;
-	border-left:5px solid turquoise;
-	border-bottom:5px solid red;
-	border-right:5px solid red;
-}
-img.overwatch-heal {
-	border:5px solid yellow;
-}
-img.overwatch-heal-speed {
-	border-top:5px solid yellow;
-	border-left:5px solid yellow;
-	border-bottom:5px solid #24ea0e;
-	border-right:5px solid #24ea0e;
 }
 img.poke-game-cover {
 	width: 100px;

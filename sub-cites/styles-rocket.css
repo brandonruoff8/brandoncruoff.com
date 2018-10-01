@@ -1,0 +1,79 @@
+.dark-blue-outline {
+	border: 3px solid #00004d;
+	margin: 10px;
+	width: 48%;
+	float: left;
+}
+.player-headline {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+	width:240px;
+}	
+.xbox-headline {
+	background-color: white;
+    color: #56af62;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+	width:60px;
+}	
+.xbox-gamertag {
+	background-color: #56af62;
+    color: white;
+    padding:10px;
+    text-align: center;   
+    display: inline-block;
+    font-size: 16px;
+	width:160px;
+}
+.pc-headline {
+	background-color: #282828;
+    color: white;
+    padding:10px;
+    text-align: center;   
+    display: inline-block;
+    font-size: 16px;
+	width: 60px;
+}	
+.pc-gamertag {
+	background-color: white;
+    color: #282828;
+    padding:10px;
+    text-align: center;
+	font: bold;   
+    display: inline-block;
+    font-size: 16px;
+	width:160px;
+}
+.rank-headline {
+	background-color: #bababa;
+    color: white;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+	width:95%;
+}		
+.rank-type {
+	background-color: #80B1D0;
+	border-bottom:1px solid #00004d;
+    color: white;
+    padding:10px;
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px;
+	width:30%;
+}	
+.left-side-rl {
+	width: 37%;
+	float: left;
+}
+.right-side-rl {
+	width: 63%;
+	float: right;
+}
