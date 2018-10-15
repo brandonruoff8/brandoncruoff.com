@@ -1,3 +1,9 @@
+h2.black-bg {
+	background-color:#282828;
+	padding: 15px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
 .poke-rant {
 	border: 3px solid black;
 	color: white;

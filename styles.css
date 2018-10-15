@@ -59,7 +59,7 @@ a:visited {
 .gray-button {
     background-color: #696969;
     border: none;
-	margin-bottom: 5px;
+	margin-top: 10px;
     color: white;
     padding:10px;
     text-align: center;
@@ -70,7 +70,7 @@ a:visited {
 	cursor: pointer;
 }
 .top-strip {
-	background-color: #00004d;
+	background-color: #282828;
 	width:100%;
 	position: fixed;
 	top:0px;
@@ -114,7 +114,7 @@ a:visited {
 	float: right;
 }
 .third-width {
-	width:30%;
+	width:31%;
 }
 .left-third {
 	width: 30%;
@@ -147,6 +147,7 @@ a:visited {
 	padding: 10px;
 	overflow: auto;	
 	position: relative;
+	margin-bottom: 20px;
 }
 .gray-outline {
 	border: 3px solid #bababa;
@@ -243,6 +244,9 @@ th {
 .tan-text {
 	color:#d2b48c;
 }
+.brown-text {
+	color:#cb9863
+}
 .almost-black-text {
 	color:#282828;
 }
@@ -255,8 +259,17 @@ th {
 .red-orange-text {
 	color:#f45c16;
 }
+.pale-orange-text {
+	color:#E09973;
+}
 .yellow-text {
-	color:yellow;
+	color:#FFFF66;
+}
+.green-text {
+	color:#509C6B;
+}
+.ice-blue-text {
+	color:#B2D9EE;
 }
 .light-blue-text {
 	color:#3ebef9;
