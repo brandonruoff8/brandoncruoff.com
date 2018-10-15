@@ -99,6 +99,10 @@ a:visited {
 	justify-content: space-between;
 	flex-flow: wrap;
 }
+.container-no-wrap {
+	display: flex;
+	justify-content: space-between;
+}
 .centering {
 	text-align:center;
 }
