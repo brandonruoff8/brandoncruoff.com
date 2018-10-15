@@ -1,0 +1,37 @@
+.poke-rant {
+	border: 3px solid black;
+	color: white;
+	text-align: left;
+	margin: 20px;
+	padding: 20px;
+	text-indent: 30px;
+}	
+.left-side-poke {
+	width: 70%;
+	float: left;
+}
+.right-side-poke {
+	width: 30%;
+	float: right;
+	text-align: center;
+	margin-left: 10px;
+}
+img.pokepic {
+	width: 200px;
+	height: 200px;
+}
+img.poke-game-cover {
+	width: 100px;
+	height: 100px;
+}
+.top-left-white {
+	background-color: white;
+	color: #696969;
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	padding: 5px;
+	border-bottom-right-radius: 5px;
+}

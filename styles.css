@@ -78,6 +78,7 @@ a:visited {
 	top:0px;
 	left:0px;
 	height:60px;
+	z-index: 5;
 }
 .back-button {
 	background-color: #696969;
@@ -98,6 +99,7 @@ a:visited {
 .container {
 	display: flex;
 	justify-content: space-between;
+	flex-flow: wrap;
 }
 .centering {
 	text-align:center;
@@ -105,14 +107,6 @@ a:visited {
 .align-left {
 	text-align:left;
 }
-.poke-rant {
-	border: 3px solid black;
-	color: white;
-	text-align: left;
-	margin: 20px;
-	padding: 20px;
-	text-indent: 30px;
-}	
 .left-half {
 	width: 50%;
 	float: left;
@@ -120,6 +114,9 @@ a:visited {
 .right-half {
 	width: 50%;
 	float: right;
+}
+.third-width {
+	width:30%;
 }
 .left-third {
 	width: 30%;
@@ -131,16 +128,6 @@ a:visited {
 .right-third {
 	width: 30%;
 	float: right;
-}
-.left-side-poke {
-	width: 70%;
-	float: left;
-}
-.right-side-poke {
-	width: 30%;
-	float: right;
-	text-align: center;
-	margin-left: 10px;
 }
 .right-float {
 	float:right;
@@ -161,6 +148,7 @@ a:visited {
 	border: 3px solid white;
 	padding: 10px;
 	overflow: auto;	
+	position: relative;
 }
 .gray-outline {
 	border: 3px solid #bababa;
@@ -188,9 +176,6 @@ a:visited {
 .extra-box-padding {
 	padding:5px;
 }
-.pokemon {
-	text-align:center;
-}
 img.profile-pic {
 	width:200px;
 	height:200px;
@@ -208,10 +193,6 @@ img.small-pic {
 	height: 150px;
 }
 img.med-pic {
-	width: 200px;
-	height: 200px;
-}
-img.pokepic {
 	width: 200px;
 	height: 200px;
 }
@@ -233,10 +214,6 @@ img.rotate90ccw {
 img.rotate180 {
 	transform: rotate(180deg);
 }
-img.poke-game-cover {
-	width: 100px;
-	height: 100px;
-}
 form.center {
 	text-align: center;
 }
@@ -252,6 +229,9 @@ table, th, td {
 }
 th {
 	background-color: #696969;
+}
+.gray-text {
+	color: #696969;
 }
 .almost-black-text {
 	color:#282828;
