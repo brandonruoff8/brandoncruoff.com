@@ -8,13 +8,12 @@
 }	
 .left-side-poke {
 	width: 70%;
-	float: left;
 }
 .right-side-poke {
-	width: 30%;
-	float: right;
+	width: 25%;
 	text-align: center;
 	margin-left: 10px;
+	padding-top:20px;
 }
 img.pokepic {
 	width: 200px;
@@ -27,11 +26,10 @@ img.poke-game-cover {
 .top-left-white {
 	background-color: white;
 	color: #696969;
-	width: 100px;
 	height: 20px;
 	position: absolute;
 	top:0px;
 	left:0px;
-	padding: 5px;
-	border-bottom-right-radius: 5px;
+	padding: 6px;
+	border-bottom-right-radius: 10px;
 }

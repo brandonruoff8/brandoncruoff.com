@@ -19,11 +19,9 @@ h3 {
 	color:white;
 }
 a:link {
-	color:white;
 	text-decoration:none;
 }
 a:visited {
-	color:white;
 	text-decoration:none;
 }
 .dead-middle {
@@ -230,51 +228,57 @@ table, th, td {
 th {
 	background-color: #696969;
 }
+.white-text {
+	color:white;
+}
 .gray-text {
 	color: #696969;
 }
-.almost-black-text {
-	color:#282828;
-}
-.yellow-text {
-	color:yellow;
-}
-.purple-text {
-	color:#d06ddb;
-}
-.red-text {
-	color:red;
-}
-.red-orange-text {
-	color:#f45c16;
-}
-.maroon-text {
-	color:#a83939;
-}
-.light-blue-text {
-	color:#3ebef9;
+.light-gray-text {
+	color: #cccccc;
 }
 .sand-text {
 	color:#edda0e;
 }
+.tan-text {
+	color:#d2b48c;
+}
+.almost-black-text {
+	color:#282828;
+}
+.red-text {
+	color:red;
+}
+.maroon-text {
+	color:#a83939;
+}
+.red-orange-text {
+	color:#f45c16;
+}
+.yellow-text {
+	color:yellow;
+}
+.light-blue-text {
+	color:#3ebef9;
+}
 .turquoise-text {
 	color:turquoise;
+}
+.navy-text {
+	color:#000066;
+}
+.draco-text {
+	color:#4c4c93;
+}
+.purple-text {
+	color:#d06ddb;
+}
+.lavender-text {
+	color:#eedcfd;
 }
 .pink-text {
 	color:#F660AB;
 }
 .light-pink-text {
 	color:#ffb7fb;
-}
-.white-text {
-	color:white;
-}
-.tan-text {
-	color:#d2b48c;
-}
-.draco-text {
-	color:#5c47a7;
-}
-.lavender-text {
-	color:#eedcfd;
 }
