@@ -229,6 +229,7 @@ table, th, td {
 	padding: 10px;
 	text-align: center;
 	background-color: white;
+	color: black;
 }
 th {
 	background-color: #696969;

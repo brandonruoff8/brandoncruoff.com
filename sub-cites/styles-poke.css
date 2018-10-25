@@ -29,13 +29,10 @@ img.poke-game-cover {
 	width: 100px;
 	height: 100px;
 }
-.top-left-white {
+.white-menu {
 	background-color: white;
 	color: #696969;
-	height: 20px;
-	position: absolute;
-	top:0px;
-	left:0px;
-	padding: 6px;
-	border-bottom-right-radius: 10px;
+	padding: 8px;
+	border-radius: 10px;
+	display: block;
 }
