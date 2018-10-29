@@ -4,59 +4,6 @@
 	<title> Brandon's Webpage </title>
 	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-	<script>
-		var imageNum = 0;
-		var pictures = ['https://brain-images-ssl.cdn.dixons.com/8/1/10153218/u_10153218.jpg',
-						'https://ih0.redbubble.net/image.98538055.2991/flat,1000x1000,075,f.u1.jpg',
-						'https://wiki.gamedetectives.net/images/b/bf/Overwatch_logo.jpg',
-						'https://scottiestech.info/wp-content/uploads/2009/08/paint.jpg',
-						'https://d1aeri3ty3izns.cloudfront.net/media/10/103678/1200/preview.jpg'];
-		
-		
-		function change()
-		{
-			var image = document.getElementById("imageId");
-			image.src = pictures[imageNum];
-			imageNum++;
-			if(imageNum > 4)
-			{
-				imageNum = 0;
-			}
-			
-		}
-		
-		var timer = setInterval('change()', 2000);
-		
-		function check_info()
-		{
-			var allowIn = false;
-			var validUser = ["BRANDON", "LOGAN", "JEREMIYAH", "JOSHUAH"];
-			var validPass = ["ruoff8", "jeffery9", "jeffery1", "jeffery2"];
-			var username = document.getElementById('username').value.toUpperCase();
-			var password = document.getElementById('password').value;
-			var info = document.getElementById('info');
-			if(username=="" || password=="")
-			{	
-				alert("Please fill in both fields.");
-				info.innerHTML = "Enter login information to continue.";
-				return false;
-			}
-			var i;
-			for(i = 0; i < validUser.length; i++)
-			{
-				if(username==validUser[i] && password==validPass[i])
-				{
-					allowIn = true;
-					break;
-				}
-			}
-			if(!allowIn)
-			{
-				info.innerHTML = "Incorrect username or password.";
-			}
-			return allowIn;
-		}	
-	</script>
 </head>
 <body>
 	<div class="top-strip centering">	
@@ -66,29 +13,17 @@
 		<a href="sub-cites/art.html" class="gray-button"> Art </a> 
 		<a href="sub-cites/running.html" class="gray-button"> Running </a> 
 	</div>
-	<h1> Brandon C. Ruoff </h1>
-
 	<div class="centering">
+		<h1> Brandon C. Ruoff </h1>
+	
 		<div> 
 			<img class="profile-pic" alt="Profile Picture" src="pictures/FacebookProfilePicMarch2018.jpg">
-		</div>
-		<div>
-			<img class="small-pic" alt="Picture of Interest" id="imageId" src="https://brain-images-ssl.cdn.dixons.com/8/1/10153218/u_10153218.jpg" >
 		</div>
 		<div class="white-text">
 			<h2> Contact me: </h2>
 			E-mail: brandoru15@gmail.com
 		</div>
 		<br>
-		<div id="info" class="center-whole white-text">
-		Enter login credentials to access the secret section of Brandon's webpage. <br>
-		(Spoiler alert: This is the most insecure login page in the world. Feel free to "hack" into it.)
-		<form class="center white-text" action="sub-cites/game.html" method="get" onsubmit="return check_info();">
-			Username: <input type="text" name="username" id="username"/><br/>
-			Password: <input type="password" name="password" id="password"/><br/>
-			<input type="submit" value="Login"/><br/>
-		</form>
-		</div>
 	</div>
 	
 </body>

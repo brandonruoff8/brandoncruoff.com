@@ -36,3 +36,9 @@ img.poke-game-cover {
 	border-radius: 10px;
 	display: block;
 }
+.party-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+	margin: 10px;
+}
