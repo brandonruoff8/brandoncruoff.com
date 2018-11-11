@@ -10,35 +10,60 @@
 		<a href="pokemon.html" class="gray-button"> Back </a>
 	</div>
 
-	<h1> Team Builder </h1>
-	<div class="party-container" id="party">
+	<h1> Teambuilder </h1>
+	
+	<div class="centering">
+		If you need a list to choose from, click the link below
+		to see the National Pok&eacute;dex of all Pok&eacute;mon.
+		<br><br>
+		<a href="http://www.pokemondb.net/pokedex/national" class="gray-button"> Pok&eacute;mon Database National Pok&eacute;dex </a>
+	</div>
+	
+	
+	<div class="party-container team-outline" id="party">
 		<div class="centering">
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom.gif"> <br>
+			<button class="gray-button" onClick="removePoke(0)" id="remove0"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(0,1)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom.gif" id="poke0" alt="pokemon0"> <br><br>
 		</div>
 		<div class="centering">
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-heat.gif">
+			<button class="gray-button" onClick="removePoke(1)" id="remove1"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(1,2)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-heat.gif" id="poke1" alt="pokemon1"> 
 		</div>
 		<div class="centering">
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-wash.gif">
+			<button class="gray-button" onClick="removePoke(2)" id="remove2"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(2,3)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-wash.gif" id="poke2" alt="pokemon2"> 
 		</div> 
 		<div class="centering">
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-mow.gif">
+			<button class="gray-button" onClick="removePoke(3)" id="remove3"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(3,4)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-mow.gif" id="poke3" alt="pokemon3"> 
 		</div>
 		<div class="centering">
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-frost.gif">
+			<button class="gray-button" onClick="removePoke(4)" id="remove4"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(4,5)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-frost.gif" id="poke4" alt="pokemon4">
 		</div>
 		<div class="centering">	
-			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-fan.gif">
+			<button class="gray-button" onClick="removePoke(5)" id="remove5"> Remove </button> <br><br>
+			<button class="gray-button" onClick="switchPoke(5,0)"> Move >> </button> <br><br>
+			<img src="http://www.smogon.com/dex/media/sprites/xy/rotom-fan.gif" id="poke5" alt="pokemon5"> 
 		</div>
 	</div>
-	<div class="left-align white-text">
-		Search <input type="text" id="search" name="search">
-	</div>
-
-	<script>
-		var user_party = ["", "", "", "", "", "", ""]
-
-	</script>
 	
+	<div class="red-text" id="invalid">
+		
+	</div>
+	
+	<div class="centering search-bar">
+		Enter name: <input type="text" id="search" name="search" maxlength="20">
+		<br><br>
+		<button class="gray-button" onClick="addToTeam()"> Add to Team </button>
+		<button class="gray-button" onClick="clearTeam()"> Clear Team </button>
+	</div>	
+	
+	<script src="teambuilder.js"></script>
 </body>
 </html>
