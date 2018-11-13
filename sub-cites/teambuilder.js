@@ -34,13 +34,13 @@ function switchPoke(index1, index2) {
 	var pokemon2 = document.getElementById("poke" + index2);
 	pokemon1.src = "http://www.smogon.com/dex/media/sprites/xy/" + pokeTeam[index1] + ".gif";
 	pokemon2.src = "http://www.smogon.com/dex/media/sprites/xy/" + pokeTeam[index2] + ".gif";
-	if(pokeTeam[index1] = "") {
+	if(pokeTeam[index1] == "") {
 		pokemon1.style.visibility = "hidden";
 	}
 	else {
 		pokemon1.style.visibility = "visible";
 	}
-	if(pokeTeam[index2] = "") {
+	if(pokeTeam[index2] == "") {
 		pokemon2.style.visibility = "hidden";
 	}
 	else {
