@@ -11,6 +11,17 @@ h2.black-bg {
 	margin: 20px;
 	padding: 20px;
 	text-indent: 30px;
+}
+table {
+	width: 90%;
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+	color: black;
 }	
 .left-side-poke {
 	width: 70%;
