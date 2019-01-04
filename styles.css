@@ -163,8 +163,8 @@ a:visited {
 	padding:5px;
 }
 img.profile-pic {
-	width:200px;
-	height:200px;
+	width:300px;
+	height:300px;
 	background-color:light-gray;
 	margin:5px;
 	border:5px solid #696969;
@@ -202,17 +202,6 @@ img.rotate180 {
 }
 form.center {
 	text-align: center;
-}
-table {
-	width: 90%;
-}
-table, th, td {
-    border: 3px solid black;
-    border-collapse: collapse;
-	padding: 10px;
-	text-align: center;
-	background-color: white;
-	color: black;
 }
 th {
 	background-color: #696969;

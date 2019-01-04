@@ -26,19 +26,16 @@ img.overwatch-tank-main {
 	border:5px solid turquoise;
 }
 img.overwatch-tank-off {
-	border-top:5px solid turquoise;
-	border-left:5px solid turquoise;
-	border-bottom:5px solid red;
-	border-right:5px solid red;
+	border: 5px solid #ff7eff;
 }
 img.overwatch-heal {
 	border:5px solid yellow;
 }
 img.overwatch-heal-speed {
-	border-top:5px solid yellow;
-	border-left:5px solid yellow;
-	border-bottom:5px solid #24ea0e;
-	border-right:5px solid #24ea0e;
+	border-top:5px solid #24ea0e;
+	border-left:5px solid #24ea0e;
+	border-bottom:5px solid yellow;
+	border-right:5px solid yellow;
 }
 .left-side-ow {
 	width: 74%;
@@ -223,4 +220,34 @@ img.overwatch-heal-speed {
 	border-radius: 20px;
     font-size: 16px;
 	width:160px;
+}
+.red-box {
+	background-color:#ff4d4d;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12pt;
+}
+.blue-box {
+	background-color: turquoise;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12pt;
+}
+.pink-box {
+	background-color: #ff7eff;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12pt;
+}
+.yellow-box {
+	background-color: #ffff99;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12pt;
+}
+.green-box {
+	background-color: #24ea0e;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12pt;
 }
