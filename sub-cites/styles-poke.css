@@ -77,12 +77,12 @@ img.poke-game-cover {
 	flex-direction: column;
 }
 .battle-area {
-	height: 60%;
+	height: 70%;
 	border: 1px solid black;
 }
 .text-area {
 	border: 2px solid black;
-	height: 20%;
+	height: 15%;
 	width: auto;
 	padding: 1%;
 }
