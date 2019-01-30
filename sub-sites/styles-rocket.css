@@ -15,36 +15,32 @@
     color: white;
     padding:10px;
     text-align: center; 
-    display: inline-block;
     font-size: 16px;
-	width:240px;
 }	
 .xbox-headline {
 	background-color: white;
     color: #56af62;
     padding:10px;
     text-align: center; 
-    display: inline-block;
     font-size: 16px;
-	width:60px;
+	width: 25%;
+	float: left;
 }	
 .xbox-gamertag {
 	background-color: #56af62;
     color: white;
     padding:10px;
     text-align: center;   
-    display: inline-block;
     font-size: 16px;
-	width:160px;
 }
 .pc-headline {
 	background-color: #282828;
     color: white;
     padding:10px;
     text-align: center;   
-    display: inline-block;
     font-size: 16px;
-	width: 60px;
+	width: 25%;
+	float: left;
 }	
 .pc-gamertag {
 	background-color: white;
@@ -52,18 +48,14 @@
     padding:10px;
     text-align: center;
 	font: bold;   
-    display: inline-block;
     font-size: 16px;
-	width:160px;
 }
 .rank-headline {
 	background-color: #bababa;
     color: white;
     padding:10px;
     text-align: center; 
-    display: inline-block;
     font-size: 16px;
-	width:90%;
 }		
 .rank-type {
 	background-color: #80B1D0;
@@ -71,15 +63,16 @@
     color: white;
     padding:10px;
     text-align: center; 
-    display: inline-block;
     font-size: 16px;
 	width:30%;
 }	
 .left-side-rl {
-	width: 38%;
+	width: 40%;
 	float: left;
 }
 .right-side-rl {
 	width: 60%;
 	float: right;
+	border-left: 1px solid black;
+	margin-left: -1px;
 }
