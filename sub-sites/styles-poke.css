@@ -46,6 +46,12 @@ img.poke-game-cover {
 	padding: 8px;
 	border-radius: 10px;
 	display: block;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+.white-menu:hover {
+	background-color: #ff3333;
+	color: white;
 }
 .party-container {
 	display: flex;
