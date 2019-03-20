@@ -36,8 +36,9 @@ hr.index {
 .dead-middle {
 	padding-top: 100px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .game-nav {
 	width: 300px;
@@ -87,6 +88,8 @@ hr.index {
 }
 .gray-button-top {
 	margin: 2px;
+	margin-left: 1px;
+	margin-right: 1px
 }
 .top-strip {
 	background-color: #282828;
