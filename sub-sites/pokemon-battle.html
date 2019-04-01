@@ -3,29 +3,38 @@
 <head>
 	<title> Brandon's Pok&eacute;mon Battle </title>
 	<link rel="stylesheet" href="../styles.css">
-	<link rel="stylesheet" href="styles-poke.css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="styles-poke-battle.css">
+	<script src="pokemon-battle.js"></script>
 </head>
 <body>
 	<div class="top-strip left-align">
-		<a href="pokemon.html" class="gray-button"> Back </a>
+		<a href="computer-science.html" class="gray-button"> Back </a>
 	</div>
 	
 	<div class="battle-canvas">
 		<div class="battle-area">
-				<img class="opponent-poke" src="https://play.pokemonshowdown.com/sprites/xyani/yveltal.gif" alt="opponent pokemon">
-				<img class="player-poke" src="https://play.pokemonshowdown.com/sprites/xyani-back/medicham-mega.gif">
+			<div class="left-side">
+				<div class="opponent-status-bar" id="opponent-status-bar"> Xerneas </div>
+				<img class="player-poke" src="https://play.pokemonshowdown.com/sprites/xyani-back/yveltal.gif" alt="player pokemon" id="player-poke">
+			</div>
+			<div class="right-side">
+				<img class="opponent-poke" src="https://play.pokemonshowdown.com/sprites/xyani/xerneas.gif" alt="opponent pokemon" id="opponent-poke">
+				<div class="player-status-bar" id="player-status-bar"> Yveltal </div>
+			</div>
 		</div>
-		<div class="text-area">
+		<div class="text-area" id="text-area">
 			Text area
 		</div>
-		<div class="moves-area">
-			<button type="button" class="move"> Move 1 </button>
-			<button type="button" class="move"> Move 2 </button>
-			<button type="button" class="move"> Move 3 </button>
-			<button type="button" class="move"> Move 4 </button>
+		<div class="moves-area" id="button-row">
+			<button type="button" class="move-button" id="move1" onclick="useMove(0,0)"> Move 1 </button>
+			<button type="button" class="move-button" id="move2" onclick="useMove(0,1)"> Move 2 </button>
+			<button type="button" class="move-button" id="move3" onclick="useMove(0,2)"> Move 3 </button>
+			<button type="button" class="move-button" id="move4" onclick="useMove(0,3)"> Move 4 </button>
 		</div>
+	</div>
+	<br>
+	<div class="centering">
+		<button type="button" class="gray-button" id="start-button" onclick="initialize()"> Start </button>
 	</div>
 
 </body>
