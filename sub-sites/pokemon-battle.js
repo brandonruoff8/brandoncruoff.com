@@ -50,10 +50,10 @@ function initialize() {
 	document.getElementById('opponent-poke').src = "https://play.pokemonshowdown.com/sprites/xyani/" + opponent.currentPoke.classify + ".gif";
 	document.getElementById('player-status-bar').innerHTML = playerOne.currentPoke.name;
 	document.getElementById('opponent-status-bar').innerHTML = opponent.currentPoke.name;
-	document.getElementById('battle-area').style.visibility = "visible";
-	document.getElementById('text-area').style.visibility = "visible";
-	document.getElementById('button-row').style.visibility = "visible";
-	document.getElementById('start-button').style.visibility = "hidden";
+	document.getElementById('battle-area').style.display = "block";
+	document.getElementById('text-area').style.display = "block";
+	document.getElementById('button-row').style.display = "flex";
+	document.getElementById('start-button').style.display = "none";
 }
 
 function switchPoke(player, pokeNum) {
