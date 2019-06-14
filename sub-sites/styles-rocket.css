@@ -11,8 +11,9 @@
 	float: right;
 }
 .player-headline {
-	background-color: #bababa;
+	background-color: gray;
     color: white;
+	border-bottom:1px solid #00004d;
     padding:10px;
     text-align: center; 
     font-size: 16px;
@@ -20,19 +21,27 @@
 .xbox-headline {
 	background-color: white;
     color: #56af62;
-    padding:10px;
-    text-align: center; 
+	border-bottom:1px solid #00004d;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
     font-size: 16px;
 	width: 25%;
 	float: left;
+	height: 40px
 }	
 .xbox-gamertag {
 	background-color: #56af62;
     color: white;
-    padding:10px;
-    text-align: center;   
+	border-bottom:1px solid #00004d;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
     font-size: 16px;
+	width: auto;
+	height: 40px;
 }
+
 .pc-headline {
 	background-color: #282828;
     color: white;
@@ -50,13 +59,41 @@
 	font: bold;   
     font-size: 16px;
 }
+.youtube-headline {
+	background-color: white;
+    color: red;
+	border-bottom:1px solid #00004d;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+    font-size: 16px;
+	width: 25%;
+	float: left;
+	height: 40px
+}	
+.youtube-name {
+	background-color: #FB3B3B;
+    color: white;
+	border-bottom:1px solid #00004d;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+    font-size: 16px;
+	width: auto;
+	height: 40px;
+}
 .rank-headline {
-	background-color: #bababa;
+	background-color: gray;
+	border-bottom:1px solid #00004d;
     color: white;
     padding:10px;
     text-align: center; 
     font-size: 16px;
-}		
+	width: 100%;
+}	
+.row {
+	display: flex;
+}	
 .rank-type {
 	background-color: #80B1D0;
 	border-bottom:1px solid #00004d;
@@ -64,8 +101,31 @@
     padding:10px;
     text-align: center; 
     font-size: 16px;
-	width:30%;
+	width:50%;
 }	
+.rank-value {
+	background-color: #bababa;
+	border-bottom:1px solid #00004d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    color: white;
+    font-size: 16px;
+	width: 100%;
+	height: 40px;
+}
+.rank-icon {
+	height: 40px;
+	width: auto;
+}
+.youtube-icon {
+	height: 30px;
+	width: auto;
+}
+.play-style-icon {
+	width: 100%;
+	height: auto;
+}
 .left-side-rl {
 	width: 40%;
 	float: left;
