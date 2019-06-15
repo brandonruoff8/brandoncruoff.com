@@ -45,19 +45,24 @@
 .pc-headline {
 	background-color: #282828;
     color: white;
-    padding:10px;
-    text-align: center;   
+	display: flex;
+	justify-content: center;
+	align-items: center;  
     font-size: 16px;
 	width: 25%;
 	float: left;
+	height: 40px;
 }	
 .pc-gamertag {
 	background-color: white;
     color: #282828;
-    padding:10px;
-    text-align: center;
+ 	display: flex;
+	justify-content: center;
+	align-items: center; 
 	font: bold;   
     font-size: 16px;
+	width: auto;
+	height: 40px;
 }
 .youtube-headline {
 	background-color: white;
@@ -98,10 +103,12 @@
 	background-color: #80B1D0;
 	border-bottom:1px solid #00004d;
     color: white;
-    padding:10px;
-    text-align: center; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
     font-size: 16px;
-	width:50%;
+	width:70%;
+	height: 40px;
 }	
 .rank-value {
 	background-color: #bababa;
@@ -127,11 +134,11 @@
 	height: auto;
 }
 .left-side-rl {
-	width: 40%;
+	width: 45%;
 	float: left;
 }
 .right-side-rl {
-	width: 60%;
+	width: 55%;
 	float: right;
 	border-left: 1px solid black;
 	margin-left: -1px;
