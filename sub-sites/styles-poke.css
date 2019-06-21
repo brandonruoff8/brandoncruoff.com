@@ -72,3 +72,8 @@ img.poke-game-cover {
 .team-outline {
 	border: 2px solid white;
 }
+.poke-mini-sprite {
+	width: 50px;
+	height: auto;
+
+}

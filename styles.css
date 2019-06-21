@@ -34,6 +34,11 @@ hr.index {
     background-color: white;
 	width: 80%;
 }
+img.silhouette {
+  -webkit-filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(100%);
+  filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(100%);
+  opacity: 1;
+}
 .dead-middle {
 	padding-top: 100px;
 	display: flex;
