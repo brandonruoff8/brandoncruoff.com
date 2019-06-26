@@ -1,0 +1,20 @@
+.truman-button {
+	padding: 5px;
+	background-color: #4F1E70;
+	color: white;
+}
+
+.lockton-button {
+	padding: 5px;
+	background-color: #00306B;
+	color: white;
+}
+.resume-section {
+	padding: 5px;
+	background-color: #696969;
+	color: white;
+}
+hr.lockton-line {
+	color: white;
+	background-color: white;
+}
