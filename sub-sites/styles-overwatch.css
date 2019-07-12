@@ -8,34 +8,46 @@ img.overwatch-small {
 	background-color: black;
 }
 img.overwatch-dps {
-	border:5px solid red;
+	border:5px solid #ff4d4d;
 }
 img.overwatch-dps-heal {
-	border-top:5px solid red;
-	border-left:5px solid red;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
+	border-top:5px solid #ff4d4d;
+	border-left:5px solid #ff4d4d;
+	border-bottom:5px solid #ffff99;
+	border-right:5px solid #ffff99;
+}
+img.overwatch-dps-disable {
+	border-top:5px solid #BA55D3;
+	border-left:5px solid #BA55D3;
+	border-bottom:5px solid #ff4d4d;
+	border-right:5px solid #ff4d4d;
+}
+img.overwatch-heal-disable {
+	border-top:5px solid #BA55D3;
+	border-left:5px solid #BA55D3;
+	border-bottom:5px solid #ffff99;
+	border-right:5px solid #ffff99;
 }
 img.overwatch-tank-heal {
-	border-top:5px solid turquoise;
-	border-left:5px solid turquoise;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
+	border-top:5px solid #8080ff;
+	border-left:5px solid #8080ff;
+	border-bottom:5px solid #ffff99;
+	border-right:5px solid #ffff99;
 }
 img.overwatch-tank-main {
-	border:5px solid turquoise;
+	border:5px solid #8080ff;
 }
 img.overwatch-tank-off {
 	border: 5px solid #ff7eff;
 }
 img.overwatch-heal {
-	border:5px solid yellow;
+	border:5px solid #ffff99;
 }
 img.overwatch-heal-speed {
 	border-top:5px solid #24ea0e;
 	border-left:5px solid #24ea0e;
-	border-bottom:5px solid yellow;
-	border-right:5px solid yellow;
+	border-bottom:5px solid #ffff99;
+	border-right:5px solid #ffff99;
 }
 .left-side-ow {
 	width: 74%;
@@ -46,16 +58,27 @@ img.overwatch-heal-speed {
 	float: right;
 	text-align: right;
 }
+.headlines-container {
+	display: flex;
+	justify-content: space-between;
+}
+.player-headline-container {
+	display: flex;
+}
+.skill-headline-container {
+	display: flex;
+}
 .damage-headline-left {
     background-color: #ff4d4d;
     color: #bababa;
     padding:10px;
-    text-align: center;
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
     font-size: 16px;
-	width:60px;
+	width:40%;
 }
 .damage-headline-right {
     background-color: #ff4d4d;
@@ -72,19 +95,21 @@ img.overwatch-heal-speed {
     background-color: #8080ff;
     color: #bababa;
     padding:10px;
-    text-align: center;
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
     font-size: 16px;
-	width:60px;
+	width:40%;
 }
 .tank-headline-right {
     background-color: #8080ff;
     color: #bababa;
     padding:10px;
-    text-align: center;
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
     font-size: 16px;
@@ -94,12 +119,13 @@ img.overwatch-heal-speed {
     background-color: #ffff99;
     color: #bababa;
     padding:10px;
-    text-align: center;
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
     font-size: 16px;
-	width:60px;
+	width: 40%;
 }
 .support-headline-right {
     background-color: #ffff99;
@@ -127,12 +153,13 @@ img.overwatch-heal-speed {
 	background-color: #bababa;
     color: white;
     padding:10px;
-    text-align: center;   
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
     font-size: 16px;
-	width:80px;
+	width:60%;
 }	
 .player-headline-mid {
 	background-color: #bababa;
@@ -147,23 +174,25 @@ img.overwatch-heal-speed {
 	background-color: white;
     color: #56af62;
     padding:10px;
-    text-align: center; 
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
     font-size: 16px;
-	width:60px;
+	width:40%;
 }	
 .xbox-gamertag {
 	background-color: #56af62;
     color: white;
     padding:10px;
-    text-align: center;   
-    display: inline-block;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
     font-size: 16px;
-	width:160px;
+	width:60%;
 }
 .pc-headline {
 	background-color: #282828;
@@ -174,7 +203,7 @@ img.overwatch-heal-speed {
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
     font-size: 16px;
-	width: 60px;
+	width: 40%;
 }	
 .pc-gamertag {
 	background-color: white;
@@ -186,7 +215,7 @@ img.overwatch-heal-speed {
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
     font-size: 16px;
-	width:160px;
+	width:60%;
 }	
 .skill-headline {
 	background-color: #bababa;
@@ -197,7 +226,7 @@ img.overwatch-heal-speed {
     display: inline-block;
 	border-radius: 20px;
     font-size: 16px;
-	width:160px;
+	width:100%;
 }
 .sr-headline-xbox {
 	background-color: #7E5FA4;
@@ -208,7 +237,7 @@ img.overwatch-heal-speed {
     display: inline-block;
 	border-radius: 20px;
     font-size: 16px;
-	width:160px;
+	width:100%;
 }
 .sr-headline-pc {
 	background-color: #A48FC0;
@@ -220,6 +249,41 @@ img.overwatch-heal-speed {
 	border-radius: 20px;
     font-size: 16px;
 	width:160px;
+}
+.hero-section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.damage-heroes-container {
+	border: 3px solid #ff4d4d;
+	margin-top: 20px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.tank-heroes-container {
+	border: 3px solid #8080ff;
+	margin-top: 20px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.support-heroes-container {
+	border: 3px solid #ffff99;
+	margin-top: 20px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.class-icon {
+	width: 20px;
+	height: auto;
+	margin-right: 10px;
 }
 .red-box {
 	background-color:#ff4d4d;

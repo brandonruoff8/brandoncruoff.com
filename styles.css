@@ -156,6 +156,9 @@ img.silhouette {
 	width: 50%;
 	float: right;
 }
+.half-width {
+	width: 50%;
+}
 .third-width {
 	width:30%;
 }
@@ -198,19 +201,19 @@ img.silhouette {
 	overflow: auto;	
 }
 .red-outline {
-	border: 3px solid #ff4d4d;
+	border: 6px solid #ff4d4d;
 	padding: 5px;
 	overflow: auto;
 	margin-bottom: 15px;
 }
 .blue-outline {
-	border: 3px solid #8080ff;
+	border: 6px solid #8080ff;
 	padding: 5px;
 	overflow: auto;
 	margin-bottom: 15px;
 }
 .yellow-outline {
-	border: 3px solid #ffff99;
+	border: 6px solid #ffff99;
 	padding: 5px;
 	overflow: auto;
 	margin-bottom: 15px;
