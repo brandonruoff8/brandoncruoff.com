@@ -218,7 +218,7 @@ img.overwatch-heal-speed {
 	width:60%;
 }	
 .skill-headline {
-	background-color: #bababa;
+	background-color: #A48FC0;
     color: white;
     padding:10px;
     text-align: center;
@@ -228,7 +228,7 @@ img.overwatch-heal-speed {
     font-size: 16px;
 	width:100%;
 }
-.sr-headline-xbox {
+.sr-headline {
 	background-color: #7E5FA4;
     color: white;
     padding:10px;
@@ -238,17 +238,6 @@ img.overwatch-heal-speed {
 	border-radius: 20px;
     font-size: 16px;
 	width:100%;
-}
-.sr-headline-pc {
-	background-color: #A48FC0;
-    color: white;
-    padding:10px;
-    text-align: center;
-	font: bold;
-    display: inline-block;
-	border-radius: 20px;
-    font-size: 16px;
-	width:160px;
 }
 .hero-section {
 	display: flex;
