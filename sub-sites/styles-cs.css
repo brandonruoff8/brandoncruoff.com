@@ -1,9 +1,12 @@
+.resume-area {
+	background-color: white;
+	border: solid white 5px;
+}
 .truman-button {
 	padding: 5px;
 	background-color: #4F1E70;
 	color: white;
 }
-
 .lockton-button {
 	padding: 5px;
 	background-color: #00306B;
@@ -18,3 +21,16 @@ hr.lockton-line {
 	color: white;
 	background-color: white;
 }
+.outback-button {
+	padding: 5px;
+	background-color: #BD282C;
+	color: white;
+}
+.jba-button {
+	padding: 5px;
+	background-color: #004F7F;
+	color: white;	
+}.github-button {
+	padding: 5px;
+	background-color: #171515;
+	color: white;
