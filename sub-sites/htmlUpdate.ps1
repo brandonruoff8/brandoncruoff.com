@@ -251,8 +251,8 @@ $gameTypeList = "ranked standard", "ranked doubles", "ranked duel", "ranked solo
 $playerSiteNameListRL = "xbox/the last gaymer", "xbox/jesus was ok", "xbox/whitewadewilson", "xbox/rinoslayer",
     "xbox/smakemyakem", "xbox/temporarygh0st", "steam/nauticalphasmid"
 
-$playerSiteNameListOW = "global/xbox/the last gaymer", "xbox/jesus was ok", "xbox/whitewadewilson", 
-    "xbox/rinoslayer", "pc/global/pippinish33-1441"
+$playerSiteNameListOW = "global/xbox/the last gaymer", "global/xbox/jesus was ok", "global/xbox/whitewadewilson", 
+    "global/xbox/rinoslayer", "pc/global/pippinish33-1441"#, "global/xbox/daniedoodlez"
 
 $scrapeFileRL = "scrapedRL.txt"
 $scrapeFileOW = "scrapedOW.txt"
