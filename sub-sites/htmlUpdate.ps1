@@ -100,6 +100,8 @@ Function ConfigOWranks()
         #Write-Output "Competitive Rank: $rankValue"
         Add-Content "$activeDirectory\outputOW.txt" "$rankValue"
     }
+    Add-Content "$activeDirectory\outputOW.txt" "global/xbox/daniedoodlez"
+    Add-Content "$activeDirectory\outputOW.txt" "1866"
 }
 
 #Searches the html file and changes the ranks to what is listed in the output files
@@ -248,8 +250,8 @@ $activeDirectory = $activeDirectory.TrimEnd($endPiece)
 $gameTypeList = "ranked standard", "ranked doubles", "ranked duel", "ranked solo standard",
     "hoops", "rumble", "dropshot", "snowday"
 
-$playerSiteNameListRL = "xbox/the last gaymer", "xbox/jesus was ok", "xbox/whitewadewilson", "xbox/rinoslayer",
-    "xbox/smakemyakem", "xbox/temporarygh0st", "steam/nauticalphasmid"
+$playerSiteNameListRL = "xbox/the last gaymer", "xbox/rinoslayer", "xbox/jesus was ok", "xbox/whitewadewilson",
+    "xbox/temporarygh0st", "xbox/smakemyakem", "steam/nauticalphasmid"
 
 $playerSiteNameListOW = "global/xbox/the last gaymer", "global/xbox/jesus was ok", "global/xbox/whitewadewilson", 
     "global/xbox/rinoslayer", "pc/global/pippinish33-1441"#, "global/xbox/daniedoodlez"
