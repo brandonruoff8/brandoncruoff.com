@@ -283,3 +283,7 @@ ren "$activeDirectory\rocket-league.html" "$activeDirectory\rocket-league-old.ht
 ren "$activeDirectory\overwatch.html" "$activeDirectory\overwatch-old.html"
 ren "$activeDirectory\newRLfile.html" "$activeDirectory\rocket-league.html"
 ren "$activeDirectory\newOWfile.html" "$activeDirectory\overwatch.html"
+
+# Open Gitbash and push automatically
+
+start " C:\Users\brand\documents\Github\brandonruoff8.github.io\sub-sites\autoCommit.sh"
