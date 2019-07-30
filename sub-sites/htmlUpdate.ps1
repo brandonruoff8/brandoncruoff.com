@@ -286,4 +286,4 @@ ren "$activeDirectory\newOWfile.html" "$activeDirectory\overwatch.html"
 
 # Open Gitbash and push automatically
 
-start " C:\Users\brand\documents\Github\brandonruoff8.github.io\sub-sites\autoCommit.sh"
+# start " C:\Users\brand\documents\Github\brandonruoff8.github.io\sub-sites\autoCommit.sh"
