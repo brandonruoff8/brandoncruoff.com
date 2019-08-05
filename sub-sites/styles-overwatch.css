@@ -245,6 +245,19 @@ img.overwatch-heal-speed {
     font-size: 16px;
 	width:100%;
 }
+.skill-headline {
+	background-color: #ff4d4d;
+    color: #696969;
+    height: 40px;
+    text-align: center;
+	font: bold;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+    font-size: 16px;
+	width:100%;
+}
 .support-skill-headline {
 	background-color: #ffff99;
     color: #696969;
