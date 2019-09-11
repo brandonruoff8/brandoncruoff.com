@@ -287,7 +287,7 @@ img.overwatch-heal-speed {
 	margin-top: 20px;
 	padding: 5px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 .tank-heroes-container {
@@ -295,7 +295,7 @@ img.overwatch-heal-speed {
 	margin-top: 20px;
 	padding: 5px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 
 }
@@ -304,7 +304,7 @@ img.overwatch-heal-speed {
 	margin-top: 20px;
 	padding: 5px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 .class-icon {
