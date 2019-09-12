@@ -2,7 +2,7 @@
 # Overwatch ranks and updates brandonruoff.com/gaming.html to have the most recent ranks
 
 #Finds the ranks for Rocket League and puts them into a file
-Function ConfigRLranks([REF]$outputValue)
+Function ConfigRLranks()
 { 
     #initialize output file
     if(Test-Path "$activeDirectory\outputRL.txt")
@@ -240,8 +240,6 @@ Function updateOWhtmlFile()
 
 #Initialization section
 
-$outputValue = @()
-
 $activeDirectory = ($MyInvocation.MyCommand.Path)
 $splitDirectory = $activeDirectory.split("\")
 $endPiece = $splitDirectory[$splitDirectory.length - 1]
@@ -259,10 +257,10 @@ $playerSiteNameListOW = "global/xbox/the last gaymer", "global/xbox/jesus was ok
 $scrapeFileRL = "scrapedRL.txt"
 $scrapeFileOW = "scrapedOW.txt"
 
-ConfigRLranks([REF]$outputValue)
+ConfigRLranks
 UpdateRLhtmlFile
-ConfigOWranks
-UpdateOWhtmlFile
+#ConfigOWranks
+#UpdateOWhtmlFile
 
 #rename files so that the new files have the original names and the old 
 #files get stored as "old ..."
@@ -270,19 +268,19 @@ UpdateOWhtmlFile
 Write-Output "Removing files used during execution..."
 
 Remove-Item "$activeDirectory\outputRL.txt"
-Remove-Item "$activeDirectory\outputOW.txt"
 Remove-Item "$activeDirectory\scrapedRL.txt"
-Remove-Item "$activeDirectory\scrapedOW.txt"
+#Remove-Item "$activeDirectory\outputOW.txt"
+#Remove-Item "$activeDirectory\scrapedOW.txt"
 
 Write-Output "Changing names of files..."
 
-Remove-Item "$activeDirectory\rocket-league-old.html"
-Remove-Item "$activeDirectory\overwatch-old.html"
+#Remove-Item "$activeDirectory\rocket-league-old.html"
+#Remove-Item "$activeDirectory\overwatch-old.html"
 
-ren "$activeDirectory\rocket-league.html" "$activeDirectory\rocket-league-old.html"
-ren "$activeDirectory\overwatch.html" "$activeDirectory\overwatch-old.html"
+#ren "$activeDirectory\rocket-league.html" "$activeDirectory\rocket-league-old.html"
 ren "$activeDirectory\newRLfile.html" "$activeDirectory\rocket-league.html"
-ren "$activeDirectory\newOWfile.html" "$activeDirectory\overwatch.html"
+#ren "$activeDirectory\overwatch.html" "$activeDirectory\overwatch-old.html"
+#ren "$activeDirectory\newOWfile.html" "$activeDirectory\overwatch.html"
 
 # Open Gitbash and push automatically
 
