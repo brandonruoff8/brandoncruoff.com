@@ -9,6 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 </head>
 <body class="margin-top">
+
+	<script>
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			window.location.replace('index-mobile.html');
+		}
+	</script>
 	<div class="top-strip centering">	
 		<a href="sub-sites/calendar.html" class="gray-button gray-button-top">Calendar</a>
 		<a href="sub-sites/computer-science.html" class="gray-button gray-button-top" >Computer Science</a>
@@ -42,5 +48,6 @@
 		</div>
 		<br>
 	</div>
+	
 </body>
 </html>
