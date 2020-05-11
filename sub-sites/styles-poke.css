@@ -72,8 +72,30 @@ img.poke-game-cover {
 .team-outline {
 	border: 2px solid white;
 }
+.sprite-outline {
+	width: 200px;
+}
+.poke-medium-sprite {
+	width: 60%;
+	height: auto;
+}
+.poke-medium-sprite-wishiwashi {
+	width: 70%;
+	height: auto;
+}
+.poke-medium-sprite-corviknight {
+	width: 100%;
+	height: auto;
+}
+.poke-medium-sprite-sylveon {
+	width: 40%;
+	height: auto;
+}
+.poke-medium-sprite-torkoal {
+	width: 50%;
+	height: auto;
+}
 .poke-mini-sprite {
 	width: 50px;
 	height: auto;
-
 }
